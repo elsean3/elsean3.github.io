@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Horario Sala de enlaces 2026</title>
+<style>
+:root{
+  --bg:#f9fbfd;--surface:#fff;--line:#dadce0;--text:#202124;--muted:#5f6368;
+  --head:#f8f9fa;--accent:#188038;--accent-ink:#fff;--sel:#e8f0fe;--selb:#1a73e8;
+  --shade:rgba(32,33,36,.55);
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#1f1f1f;--surface:#2b2b2b;--line:#444;--text:#e8eaed;--muted:#9aa0a6;
+  --head:#333;--accent:#81c995;--accent-ink:#0b2a14;--sel:#2d3b55;--selb:#8ab4f8;--shade:rgba(0,0,0,.65);}}
+:root[data-theme="dark"]{
+  --bg:#1f1f1f;--surface:#2b2b2b;--line:#444;--text:#e8eaed;--muted:#9aa0a6;
+  --head:#333;--accent:#81c995;--accent-ink:#0b2a14;--sel:#2d3b55;--selb:#8ab4f8;--shade:rgba(0,0,0,.65);}
+html{scroll-padding-top:env(safe-area-inset-top,0px);height:100%}
+*{box-sizing:border-box}
+body{margin:0;height:100%;background:var(--bg);color:var(--text);font:14px/1.4 "Roboto","Helvetica Neue",Arial,sans-serif;display:flex;flex-direction:column;overflow:hidden}
+.top{display:flex;align-items:center;gap:12px;padding:8px 14px;background:var(--bg)}
+.logo{width:28px;height:36px;border-radius:4px;background:var(--accent);position:relative;flex:none}
+.logo::after{content:"";position:absolute;inset:11px 6px 7px;background:
+ linear-gradient(var(--accent-ink),var(--accent-ink)) 0 0/100% 2px no-repeat,
+ linear-gradient(var(--accent-ink),var(--accent-ink)) 0 50%/100% 2px no-repeat,
+ linear-gradient(var(--accent-ink),var(--accent-ink)) 0 100%/100% 2px no-repeat}
+.title{font-size:18px}
+.sub{color:var(--muted);font-size:12px}
+.share{margin-left:auto;background:var(--selb);color:#fff;border-radius:18px;padding:7px 16px;font-weight:500;white-space:nowrap}
+.menu{display:flex;gap:16px;padding:2px 14px 6px;color:var(--text);overflow-x:auto;white-space:nowrap}
+.menu span{padding:2px 4px}
+.fx{display:flex;border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--surface);align-items:center}
+.fx b{padding:5px 14px;color:var(--muted);font-weight:400;border-right:1px solid var(--line);min-width:64px}
+.fx i{padding:5px 12px;font-style:normal;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.wrap{flex:1;overflow:auto;background:var(--surface)}
+table{border-collapse:collapse;table-layout:fixed;min-width:760px;width:100%}
+th,td{border:1px solid var(--line);padding:2px 8px;height:24px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+th{background:var(--head);color:var(--muted);font-weight:400;position:sticky;top:0}
+td:first-child,th:first-child{width:44px;text-align:center;background:var(--head);color:var(--muted);position:sticky;left:0}
+td.sel{outline:2px solid var(--selb);outline-offset:-2px;background:var(--sel)}
+td.r{text-align:right}
+.blur{filter:blur(4px)}
+.tabs{display:flex;align-items:center;gap:4px;padding:4px 10px;background:var(--head);border-top:1px solid var(--line);color:var(--muted)}
+.tab{padding:5px 14px;border-radius:4px}
+.tab.on{background:var(--surface);color:var(--accent);font-weight:500}
+.shade{position:fixed;inset:0;background:var(--shade);display:none;align-items:center;justify-content:center;padding:20px}
+.shade.show{display:flex}
+.modal{background:var(--surface);border-radius:12px;max-width:440px;width:100%;padding:26px 24px 20px;text-align:center;box-shadow:0 12px 40px rgba(0,0,0,.4);position:relative}
+.modal .big{font-size:56px;line-height:1}
+.modal h2{margin:10px 0 8px;font-size:22px;font-weight:500}
+.modal p{margin:0 0 10px;color:var(--muted);font-size:15px;line-height:1.5}
+.btns{display:flex;gap:10px;justify-content:center;margin-top:16px;min-height:44px;position:relative}
+button{font:inherit;border:0;border-radius:20px;padding:10px 18px;cursor:pointer;font-weight:500}
+.ok{background:var(--selb);color:#fff}
+.no{background:var(--head);color:var(--text);border:1px solid var(--line)}
+.spin{position:fixed;left:50%;top:50%;width:34px;height:34px;margin:-17px;border:4px solid var(--line);border-top-color:var(--selb);border-radius:50%;animation:s 0.9s linear infinite}
+@keyframes s{to{transform:rotate(360deg)}}
+@media (prefers-reduced-motion:reduce){.spin{animation-duration:3s}}
+.shake{animation:sh .5s}
+@keyframes sh{20%{transform:translateX(-8px)}40%{transform:translateX(8px)}60%{transform:translateX(-5px)}80%{transform:translateX(5px)}}
+</style>
+</head>
+<body>
+<div class="top">
+  <div class="logo"></div>
+  <div><div class="title">Horario Sala de enlaces 2026</div><div class="sub">Última edición hace unos segundos</div></div>
+  <div class="share">Compartir</div>
+</div>
+<div class="menu"><span>Archivo</span><span>Editar</span><span>Ver</span><span>Insertar</span><span>Formato</span><span>Datos</span><span>Herramientas</span><span>Ayuda</span></div>
+<div class="fx"><b>C4</b><i id="fx">Cargando…</i></div>
+<div class="wrap"><table id="t"></table></div>
+<div class="tabs"><span class="tab on">Enero</span><span class="tab">Febrero</span><span class="tab">Reglas de uso</span></div>
+<div class="spin" id="spin"></div>
+
+<div class="shade" id="shade" role="dialog" aria-modal="true" aria-labelledby="mt">
+  <div class="modal" id="modal">
+    <div class="big">🎣</div>
+    <h2 id="mt">¡Te pesqué!</h2>
+    <p>Bienvenida al horario de sala de enlaces de Enero. Aquí podrás reservar la sala todo Enero si deseas :D</p>
+    <div class="btns">
+      <button class="ok" id="ok">Continuar</button>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  var cols=["A","B","C","D","E","F"];
+  var names=["Hora","Lunes","Martes","Miércoles","Jueves","Viernes"];
+  var rows=[
+    ["08:00 – 09:00","Reunión de equipo","Libre","Visita proveedor","Libre","Revisión semanal"],
+    ["09:00 – 10:00","Libre","Capacitación","Libre","Entrevistas","Libre"],
+    ["10:00 – 11:00","Llamada cliente","Libre","Reunión de área","Libre","Libre"],
+    ["11:00 – 12:00","Libre","Reunión de equipo","Libre","Capacitación","Cierre de semana"],
+    ["12:00 – 13:00","Libre","Libre","Libre","Libre","Libre"],
+    ["13:00 – 14:00","Almuerzo","Almuerzo","Almuerzo","Almuerzo","Almuerzo"],
+    ["14:00 – 15:00","Libre","Llamada cliente","Entrevistas","Libre","Libre"],
+    ["15:00 – 16:00","Reunión de área","Libre","Libre","Revisión semanal","Libre"]
+  ];
+  var h='<tr><th></th>'+cols.map(function(c){return '<th>'+c+'</th>'}).join('')+'</tr>';
+  for(var r=1;r<=26;r++){
+    h+='<tr><td>'+r+'</td>';
+    for(var c=0;c<6;c++){
+      var v='';
+      if(r===1)v='<b>'+names[c]+'</b>';
+      else if(r>=2&&r<=9)v=rows[r-2][c];
+      var cls='';
+      if(r===4&&c===2)cls=' class="sel"';
+      h+='<td'+cls+'>'+v+'</td>';
+    }
+    h+='</tr>';
+  }
+  document.getElementById('t').innerHTML=h;
+  document.getElementById('fx').textContent='Libre';
+
+  var shade=document.getElementById('shade'),no=document.getElementById('ok'),ok=no;
+  setTimeout(function(){document.getElementById('spin').style.display='none';shade.classList.add('show');ok.focus();},2200);
+
+  var tries=0;
+  function dodge(e){
+    if(tries>6)return;
+    tries++;
+    var dx=(Math.random()*160-80),dy=(Math.random()*80-40);
+    no.style.position='relative';
+    no.style.transform='translate('+dx+'px,'+dy+'px)';
+    if(tries===7){no.style.transform='none';}
+    if(e&&e.preventDefault)e.preventDefault();
+  }
+  no.addEventListener('mouseenter',dodge);
+  no.addEventListener('touchstart',dodge,{passive:false});
+  no.addEventListener('click',function(){if(tries>6)win();else dodge();});
+
+  function win(){
+    var m=document.getElementById('modal');
+    m.innerHTML='<div class="big">🎉</div><h2>¡Reservada todo Enero!</h2><p>Ahora sí: la sala de enlaces es toda tuya… es broma 😄</p><p>Puedes cerrar esta pestaña, no hay nada más que reservar.</p>';
+  }
+})();
+</script>
+</body>
+</html>
